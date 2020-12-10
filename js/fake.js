@@ -46,7 +46,7 @@ class Fake {
       const photosResponse = await axios.get(`${this.BASEURL}/photos`)
 
       // change title to a discernable name
-      postsResponse.data[0].title = 'Rio Yasui'
+      postsResponse.data[0].title = 'John Johnson'
 
       // insert example user
       this.form.insertAdjacentHTML('beforeend', `
