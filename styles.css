@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* navigation menu */
+nav {
+  background-color: #f1f1f1;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  padding: 1rem;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover {
+  background-color: #d4d4d4;
+}
+
+/* fake API section */
+#form {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #ffffff;
+  width: 235px;
+}
+
+#form label {
+  width: 200px;
+  font-size: 18px;
+}
+
+#form input {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: .5rem;
+  margin: .5rem 0;
+  font-size: 16px;
+}
+
+#form input[type="text"], input[type="number"] {
+  width: 100%;
+}
+
+.submit-container {
+  text-align: center;
+}
+
+/* style buttons */
+.btn-container {
+  margin-top: .5rem;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: transparent;
+  padding: .5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn-random {
+  margin: .5rem .5rem 1.5rem .5rem;
+}
+
+.btn:hover {
+  background-color: #eeeeee;
+}
+
+/* style messages */
+.separator {
+  width: 80%;
+  background-color: black;
+}
+
+tr:nth-of-type(even) {
+  background-color: #d3d3d3;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  margin-top: .5rem;
+}
+
+.thumbnail {
+  height: 40%;
+  width: 40%;
+}
+
+/* random API section */
+.wrapper {
+  padding: 1rem;
+  text-align: center;
+}
+
+.user--container {
+  padding: .5rem;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  display: none;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.user--container > * {
+  margin: .5rem 0;
+}
+
+.address-list li {
+  list-style: none;
+  margin: .1rem 0;
+}
